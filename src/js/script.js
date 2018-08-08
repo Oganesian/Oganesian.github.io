@@ -8,7 +8,7 @@ function gotoDiv(which) {
       txt = "#about";
       break;
     case 3:
-      txt = "#thirdDiv";
+      txt = "#resume";
       break;
     case 4:
       txt = "#fourthDiv";
