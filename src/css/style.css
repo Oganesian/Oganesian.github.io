@@ -317,11 +317,11 @@ hr {
   width: 40%;
 }
 
-.html-css{
+.html-css {
   width: 80%;
 }
 
-.php {
+.php, .git {
   width: 15%;
 }
 
@@ -331,10 +331,6 @@ hr {
 
 .sql {
   width: 60%;
-}
-
-.git {
-  width: 15%;
 }
 
 #home {
@@ -379,6 +375,15 @@ hr {
   }
 }
 
+@media (max-width: 1160px) {
+  .resume-item-label, .resume-item-content {
+    width: 100%;
+  }
+  .resume-item-content {
+    margin-top: 30px;
+  }
+}
+
 @media (max-width: 851px) {
   .content h1 {
     font-size: 50px;
@@ -406,6 +411,9 @@ hr {
   }
   .content h3, .content hr {
     width: 90%;
+  }
+  .bars li em {
+    top: -35px
   }
 }
 

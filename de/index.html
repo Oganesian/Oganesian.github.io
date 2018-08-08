@@ -11,6 +11,8 @@
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
   <link rel="alternate" hreflang="en" href="http://oganesian.github.io/" />
   <script type="text/javascript" src="../src/js/script.js"></script>
+  <script type="text/javascript" src="../src/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+  <script type="text/javascript" src="../src/js/script.js"></script>
 </head>
 
 <body>
@@ -19,8 +21,9 @@
       <div class="header-content">
         <nav class="nav-wrap">
           <ul class="nav">
-            <li>Home</li>
-            <li>Über mich</li>
+            <li onclick="gotoDiv(0)">Home</li>
+            <li onclick="gotoDiv(1)">Über mich</li>
+            <li onclick="gotoDiv(2)">Zusammenfassung</li>
             <li>Portfolio</li>
             <li>Mehr</li>
           </ul>
@@ -35,20 +38,111 @@
                 <a href="https://github.com/Oganesian" target="_blank"><img src="../src/img/gitlogo.png" /></a>
               </div>
             </div>
+            <div class="arrow-down">
+              <img onclick="gotoDiv(1)" src="../src/img/arrow-down.svg" alt="Nieder" />
+            </div>
           </div>
         </div>
       </div>
     </header>
     <section id="about">
       <div class="about-row">
-        <h1>Über mich</h1>
+        <h1 class="block-label">About me</h1>
         <hr class="label-line">
         <div class="photo">
-          <img src="src/img/profilepic.jpg" alt="Mein Foto" />
+          <img src="../src/img/profilepic.jpg" alt="Mein Foto" />
         </div>
         <div class="about-text">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+        </div>
+      </div>
+    </section>
+    <section id="resume">
+      <h1 class="block-label">Zusammenfassung</h1>
+      <hr class="label-line">
+      <div class="resume-items-container">
+        <div class="resume-item">
+          <div class="resume-item-label">
+            <h1>Ausbildung</h1>
+          </div>
+          <div class="resume-item-content">
+            <h1>Technische Universität</h1>
+            <h3><i>«Programmierung in Computersystemen»&nbsp</i> || September 2014 — Juni 2017</h3>
+            <p>Die Abteilung "Raketen- und Raumfahrtausrüstung" des Moskauer Luftfahrt-Instituts, Russland.</p>
+            <p>Hier habe ich die Grundlagen der Programmierung und Algorithmisierung vermittelt. Auch hier lernte ich die Grundlagen der Programmiersprache C++ und SQL, HTML, CSS, JS und studierte Datenbankarchitekturen.</p>
+          </div>
+        </div>
+        <div class="resume-item">
+          <div class="resume-item-label">
+            <h1>Selbstbildung</h1>
+          </div>
+          <div class="resume-item-content">
+            <h1>Literatur</h1>
+            <h3><i>Bücher zum Programmieren&nbsp</i> || September 2015 — Heute</h3>
+            <p><a target="_blank" href="https://www.amazon.com/Beginners-Guide-Second-Herbert-Schildt/dp/0072232153"><b>Herbert Schildt. C++: A Beginner's Guide, Second Edition.</b></a> Mein erstes Buch über Programmierung. Dank ihr war ich immer die Erste,
+              die Laboraufgaben in der Universität übernahm. Ich konnte die Sprache kennenlernen und mich mit ihm anfreunden. Im folgenden Jahr schrieb ich den Code ausschließlich in C++. Ich habe mich mit Olympiadeproblemen beim Programmieren hinreißen
+              lassen</p>
+            <div class="book-info">
+              <div class="bought">Gekauft: <img src="../src/img/done.svg" alt="erledigt" /></div>
+              <div class="readed">Gelesen <img src="../src/img/done.svg" alt="erledigt" /></div>
+              <hr />
+            </div>
+            <p><a target="_blank" href="https://www.amazon.de/Head-First-Java-Kathy-Sierra/dp/0596009208"><b>Kathy Sierra and Bert Bates. Head First Java.</b></a> Sehr gutes, nützliches und ungewöhnliches Buch. Mit seiner Hilfe betrat die Welt von Java.</p>
+            <div class="book-info">
+              <div class="bought">Gekauft: <img src="../src/img/done.svg" alt="erledigt" /></div>
+              <div class="readed">Gelesen <img src="../src/img/done.svg" alt="erledigt" /></div>
+              <hr />
+            </div>
+            <p><a target="_blank" href="https://www.amazon.com/Thinking-Java-4th-Bruce-Eckel/dp/0131872486/"><b>Bruce Eckel. Thinking in Java (4th Edition).</b></a> Dies ist das nächste Buch in der Lesewarteschlange.</p>
+            <div class="book-info">
+              <div class="bought">Gekauft: <img src="../src/img/done.svg" alt="erledigt" /></div>
+              <div class="readed">Gelesen <img src="../src/img/crossed.svg" alt="noch nicht" /></div>
+              <hr />
+            </div>
+            <p><a target="_blank" href="https://www.amazon.com/Data-Structures-Algorithms-Java-2nd/dp/0672324539"><b>Robert Lafore. Data Structures and Algorithms in Java (2nd Edition).</b></a></p>
+            <div class="book-info">
+              <div class="bought">Gekauft: <img src="../src/img/done.svg" alt="erledigt" /></div>
+              <div class="readed">Gelesen <img src="../src/img/crossed.svg" alt="noch nicht" /></div>
+              <hr />
+            </div>
+            <p><a target="_blank" href="https://www.amazon.de/Head-First-Design-Patterns-Freeman/dp/0596007124"><b>Eric Freeman and Elisabeth Robson. Head First Design Patterns.</b></a></p>
+            <div class="book-info">
+              <div class="bought">Gekauft: <img src="../src/img/done.svg" alt="erledigt" /></div>
+              <div class="readed">Gelesen <img src="../src/img/crossed.svg" alt="noch nicht" /></div>
+              <hr />
+            </div>
+            <p><a target="_blank" href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882"><b>Robert C. Martin. Clean Code: A Handbook of Agile Software Craftsmanship.</b></a></p>
+            <div class="book-info">
+              <div class="bought">Gekauft: <img src="../src/img/done.svg" alt="erledigt" /></div>
+              <div class="readed">Gelesen <img src="../src/img/crossed.svg" alt="noch nicht" /></div>
+              <hr />
+            </div>
+            <p><a target="_blank" href="https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670"><b>Steve McConnell. Code Complete: A Practical Handbook of Software Construction, 2nd Edition.</b></a></p>
+            <div class="book-info">
+              <div class="bought">Gekauft: <img src="../src/img/done.svg" alt="erledigt" /></div>
+              <div class="readed">Gelesen <img src="../src/img/crossed.svg" alt="noch nicht" /></div>
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div class="resume-item">
+          <div class="resume-item-label">
+            <h1>Kompetenzen</h1>
+          </div>
+          <div class="resume-item-content">
+            <h1>Welche Technologien und wie gut ich schon kenne, finde ich</h1>
+            <div class="bars">
+              <ul class="skills">
+                <li><span class="bar-expand java"></span><em>Java — Ich werde in diese Richtung wachsen</em></li>
+                <li><span class="bar-expand sql"></span><em>SQL und Datenbanken — Ich werde weiter lernen</em></li>
+                <li><span class="bar-expand html-css"></span><em>HTML(5), CSS(3) — Gut (siehe diese Seite)</em></li>
+                <li><span class="bar-expand php"></span><em>PHP — Umgang mit dieser Sprache</em></li>
+                <li><span class="bar-expand cpp"></span><em>C++ — Grundlagen und STL</em></li>
+                <li><span class="bar-expand git"></span><em>Git — Ich werde weiter lernen</em></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
