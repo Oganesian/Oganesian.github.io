@@ -189,7 +189,8 @@ hr {
   border-bottom: 1px solid #cacaca;
   margin-bottom: 50px;
 }
-.resume-items-container{
+
+.resume-items-container {
   width: 70%;
   margin: auto;
   margin-top: 50px;
@@ -201,7 +202,7 @@ hr {
   float: left;
 }
 
-.resume-item-label h1{
+.resume-item-label h1 {
   padding: 0px;
   margin: 0px;
   padding-bottom: 10px;
@@ -219,7 +220,7 @@ hr {
   text-align: left;
 }
 
-.resume-item-content a{
+.resume-item-content a {
   color: #4286f4;
 }
 
@@ -244,11 +245,11 @@ hr {
   width: 100%;
 }
 
-.resume-item-content ul{
+.resume-item-content ul {
   padding: 0px;
 }
 
-.resume-item-content p{
+.resume-item-content p {
   margin: 0px;
   margin-top: 10px;
   position: inline-block;
@@ -263,10 +264,77 @@ hr {
   margin-top: 10px;
 }
 
-.bought img,
-.readed img{
+.bought img, .readed img {
   width: 20px;
   height: 20px;
+}
+
+.bars {
+  width: 95%;
+  float: left;
+  padding: 0;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.bars .skills {
+  margin-top: 36px;
+  list-style: none;
+}
+
+.bars li {
+  position: relative;
+  margin-bottom: 60px;
+  background: #ccc;
+  height: 42px;
+  border-radius: 3px;
+}
+
+.bar-expand {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding-right: 24px;
+  background: #2B2B2B;
+  display: inline-block;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 3px 0 0 3px;
+}
+
+.bars li em {
+  font: 15px 'Comfortaa', cursive;
+  font-weight: bolder;
+  color: #2B2B2B;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  top: -30px;
+}
+
+.cpp {
+  width: 40%;
+}
+
+.html-css{
+  width: 80%;
+}
+
+.php {
+  width: 15%;
+}
+
+.java {
+  width: 35%;
+}
+
+.sql {
+  width: 60%;
+}
+
+.git {
+  width: 15%;
 }
 
 #home {

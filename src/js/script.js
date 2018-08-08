@@ -7,13 +7,13 @@ function gotoDiv(which) {
     case 1:
       txt = "#about";
       break;
-    case 3:
+    case 2:
       txt = "#resume";
       break;
-    case 4:
+    case 3:
       txt = "#fourthDiv";
       break;
-    case 5:
+    case 4:
       txt = "#fifthDiv";
       break;
   }
