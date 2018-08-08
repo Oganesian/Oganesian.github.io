@@ -3,6 +3,8 @@
   box-sizing: border-box
 }
 
+
+
 html {
   height: 500%;
 }
@@ -75,6 +77,7 @@ hr {
   position: absolute;
   overflow: hidden;
   width: 100%;
+  min-height: 400px;
 }
 
 .helper {
@@ -94,7 +97,8 @@ hr {
 .content h3 {
   width: 60%;
   margin: auto;
-  font-size: 26px;
+  font-size: 24px;
+  font-family: 'Libre Baskerville', serif;
   font-weight: lighter;
   margin-top: 10px;
 }
@@ -109,6 +113,12 @@ hr {
   width: 60%;
   margin: 18px auto 24px auto;
   border-color: rgba(150, 150, 150, .5);
+}
+
+.content img{
+  width: 20%;
+  height: 5%;
+  cursor: pointer;
 }
 
 @media (max-width: 1160px) {
