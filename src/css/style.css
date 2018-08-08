@@ -322,7 +322,7 @@ hr {
 }
 
 .php, .git {
-  width: 15%;
+  width: 10%;
 }
 
 .java {
@@ -331,6 +331,30 @@ hr {
 
 .sql {
   width: 60%;
+}
+
+.js {
+  width: 15%;
+}
+
+.csharp {
+  width: 20%;
+}
+
+.russian {
+  width: 100%;
+}
+
+.armenian {
+  width: 80%;
+}
+
+.german {
+  width: 20%;
+}
+
+.english {
+  width: 50%;
 }
 
 #home {
