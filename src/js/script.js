@@ -1,3 +1,20 @@
+$(document).ready(function() {
+  $(".toggle-menu").click(function() {
+    $(".sandwich").toggleClass("active");
+  });
+
+  $(".toggle-menu").click(function() {
+    if ($(".top-menu").is(":visible")) {
+      $(".top_text").css("opacity", "1");
+      $(".top-menu").fadeOut(600);
+    } else {
+      $(".top_text").css("opacity", ".1");
+      $(".top-menu").fadeIn(600);
+    }
+  });
+
+});
+
 function gotoDiv(which) {
   var txt;
   switch (which) {
@@ -11,12 +28,11 @@ function gotoDiv(which) {
       txt = "#resume";
       break;
     case 3:
-      txt = "#fourthDiv";
-      break;
-    case 4:
-      txt = "#fifthDiv";
+      txt = "#works";
       break;
   }
+  $(".top-menu").fadeOut(300);
+  $(".sandwich").removeClass("active");
   $('html, body').animate({
     scrollTop: $(txt).offset().top
   }, 1200);

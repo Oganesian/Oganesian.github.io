@@ -17,17 +17,23 @@
 
 <body>
   <div class="wrapper">
+    <button class="toggle-menu">
+					<span class="sandwich">
+						<span class="sw-topper"></span>
+						<span class="sw-bottom"></span>
+						<span class="sw-footer"></span>
+					</span>
+    </button>
+    <nav class="top-menu">
+      <ul>
+        <li onclick="gotoDiv(0)">Home<span></span></li>
+        <li onclick="gotoDiv(1)">About me<span></span></li>
+        <li onclick="gotoDiv(2)">Resume<span></span></li>
+        <li onclick="gotoDiv(3)">Works<span></span></li>
+      </ul>
+    </nav>
     <header id="home">
       <div class="header-content">
-        <nav class="nav-wrap">
-          <ul class="nav">
-            <li onclick="gotoDiv(0)">Home</li>
-            <li onclick="gotoDiv(1)">About me</li>
-            <li onclick="gotoDiv(2)">Resume</li>
-            <li>Portfolio</li>
-            <li>More</li>
-          </ul>
-        </nav>
         <div class="container">
           <div class="helper">
             <div class="content">
@@ -53,8 +59,8 @@
           <img src="src/img/profilepic.jpg" alt="My photo" />
         </div>
         <div class="about-text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+          <p>My name is Oganesian Karen. Karen is a Armenian male name. I was born and lived in Georgia in the Armenian city of Akhalkalaki for seven years. Then I moved to Moscow and went to school there. After finishing school in 2014, I entered a technical
+            college. After twelve years of living in Russia, in September 2017 I moved to Germany and live here to this day.</p>
         </div>
       </div>
     </section>
@@ -139,7 +145,7 @@
                 <li><span class="bar-expand js"></span><em>JS — Only as an add-on to HTML</em></li>
                 <li><span class="bar-expand php"></span><em>PHP — Dealt with this language</em></li>
                 <li><span class="bar-expand cpp"></span><em>C++ — Basics and STL</em></li>
-                <li><span class="bar-expand csharp"></span><em>C# (WPF) — I'm familiar only with the WPF framework</em></li>
+                <li><span class="bar-expand csharp"></span><em>C# — only WPF framework</em></li>
                 <li><span class="bar-expand git"></span><em>Git — I'll continue to study</em></li>
               </ul>
             </div>
@@ -156,6 +162,9 @@
           </div>
         </div>
       </div>
+    </section>
+    <section id="works">
+
     </section>
   </div>
 </body>

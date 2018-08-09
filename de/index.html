@@ -10,24 +10,30 @@
   <link rel="stylesheet" type="text/css" href="../src/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
   <link rel="alternate" hreflang="en" href="http://oganesian.github.io/" />
-  <script type="text/javascript" src="../src/js/script.js"></script>
+  <script type="text/javascript" src="../src/js/jquery-min.js"></script>
   <script type="text/javascript" src="../src/js/jquery.scrollTo-1.4.3.1-min.js"></script>
   <script type="text/javascript" src="../src/js/script.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
+    <button class="toggle-menu">
+          <span class="sandwich">
+            <span class="sw-topper"></span>
+            <span class="sw-bottom"></span>
+            <span class="sw-footer"></span>
+          </span>
+    </button>
+    <nav class="top-menu">
+      <ul>
+        <li onclick="gotoDiv(0)">Home<span></span></li>
+        <li onclick="gotoDiv(1)">Über mich<span></span></li>
+        <li onclick="gotoDiv(2)">Zusammenfassung<span></span></li>
+        <li onclick="gotoDiv(3)">Meine Arbeiten<span></span></li>
+      </ul>
+    </nav>
     <header id="home">
       <div class="header-content">
-        <nav class="nav-wrap">
-          <ul class="nav">
-            <li onclick="gotoDiv(0)">Home</li>
-            <li onclick="gotoDiv(1)">Über mich</li>
-            <li onclick="gotoDiv(2)">Zusammenfassung</li>
-            <li>Portfolio</li>
-            <li>Mehr</li>
-          </ul>
-        </nav>
         <div class="container">
           <div class="helper">
             <div class="content">
@@ -47,14 +53,14 @@
     </header>
     <section id="about">
       <div class="about-row">
-        <h1 class="block-label">About me</h1>
+        <h1 class="block-label">Über mich</h1>
         <hr class="label-line">
         <div class="photo">
           <img src="../src/img/profilepic.jpg" alt="Mein Foto" />
         </div>
         <div class="about-text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+          <p>Mein Name ist Oganesian Karen. Karen ist ein armenischer männlicher Name. Ich wurde geboren und lebte in Georgien in der armenischen Stadt Achalkalaki für sieben Jahre. Dann bin ich nach Moskau gezogen und dort zur Schule gegangen. Nach dem
+            Schulabschluss im Jahr 2014 trat ich in eine technische technische Universität ein. Nach zwölf Jahren in Russland bin ich im September 2017 nach Deutschland gezogen und lebe noch heute hier.</p>
         </div>
       </div>
     </section>
@@ -141,7 +147,7 @@
                 <li><span class="bar-expand js"></span><em>JS — Nur als Add-on zu HTML</em></li>
                 <li><span class="bar-expand php"></span><em>PHP — Umgang mit dieser Sprache</em></li>
                 <li><span class="bar-expand cpp"></span><em>C++ — Grundlagen und STL</em></li>
-                <li><span class="bar-expand csharp"></span><em>C# (WPF) — Ich kenne nur das WPF-Framework</em></li>
+                <li><span class="bar-expand csharp"></span><em>C# — Nur das WPF-Framework</em></li>
                 <li><span class="bar-expand git"></span><em>Git — Ich werde weiter lernen</em></li>
               </ul>
             </div>
@@ -158,6 +164,9 @@
           </div>
         </div>
       </div>
+    </section>
+    <section id="works">
+
     </section>
   </div>
 </body>
