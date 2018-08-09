@@ -12,7 +12,6 @@ $(document).ready(function() {
       $(".top-menu").fadeIn(600);
     }
   });
-
 });
 
 function gotoDiv(which) {
