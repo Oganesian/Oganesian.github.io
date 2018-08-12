@@ -20,8 +20,7 @@ hr {
   height: 0;
 }
 
-header,
-section {
+header, section {
   transition: ease-in .3s;
 }
 
@@ -104,7 +103,7 @@ section {
   border-radius: 100%;
   background: #fff;
   cursor: pointer;
-  transition: all ease-in-out .6s;
+  transition: all ease-in-out .3s;
 }
 
 .arrow-down img:hover {
@@ -475,6 +474,7 @@ section {
   position: relative;
   z-index: 1;
   cursor: pointer;
+  transition: all ease-in-out .3s;
 }
 
 .go-back img {
@@ -482,6 +482,10 @@ section {
   width: 80%;
   height: 100%;
   transform: rotate(180deg);
+}
+
+.go-back:hover {
+  background: #00FA9A;
 }
 
 footer {
