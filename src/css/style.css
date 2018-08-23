@@ -239,6 +239,15 @@ header, section {
   margin-top: 10px;
 }
 
+.bought {
+  float: left;
+  margin-right: 15px;
+}
+
+.readed {
+  padding-left: 15px;
+}
+
 .bought img, .readed img {
   width: 20px;
   height: 20px;
@@ -391,9 +400,9 @@ header, section {
 
 .bars li {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   background: #ccc;
-  height: 42px;
+  height: 30px;
   border-radius: 3px;
 }
 
@@ -405,8 +414,8 @@ header, section {
   padding-right: 24px;
   background: #303030;
   display: inline-block;
-  height: 42px;
-  line-height: 42px;
+  height: 30px;
+  line-height: 30px;
   border-radius: 3px 0 0 3px;
 }
 
@@ -417,7 +426,7 @@ header, section {
   text-transform: uppercase;
   letter-spacing: 2px;
   position: relative;
-  top: -30px;
+  top: -22px;
 }
 
 .cpp {
@@ -592,6 +601,19 @@ footer {
   }
   .bars li em {
     top: -35px
+  }
+  .resume-items-container {
+    width: 90%;
+  }
+  .about-row {
+    width: 100%;
+  }
+  .resume-item-label {
+    text-align: center;
+  }
+  .toggle-menu {
+    right: 7px;
+    top: 7px;
   }
 }
 
