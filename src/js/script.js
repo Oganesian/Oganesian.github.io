@@ -12,6 +12,15 @@ $(document).ready(function() {
     }
   });
 
+  $(".dismiss").click(function(){
+    switch(this.id){
+      case "close-modal-1": alert(1); break;
+      case "close-modal-2": alert(2); break;
+      case "close-modal-3": alert(3); break;
+      case "close-modal-4": alert(4); break;
+    }
+  });
+
   $(".toggle-menu").click(function() {
     if ($(".top-menu").is(":visible")) {
       $(".top_text").css("opacity", "1");

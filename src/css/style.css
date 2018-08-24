@@ -507,6 +507,71 @@ header, section {
   margin: auto;
 }
 
+.modal {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .8);
+  z-index: 100;
+}
+
+.modal-container {
+  margin: auto;
+  height: 90%;
+  margin-top: 2.5%;
+  width: 45%;
+  background: #fff;
+  position: relative;
+}
+
+.description-box {
+  padding: 18px 36px 18px 36px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 18px;
+}
+
+.description-box p {
+  font-family: "Century Gothic", "Arial";
+}
+
+.buttons {
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+  background: #483D8B;
+  padding: 18px 36px;
+  text-align: left;
+}
+
+.dismiss {
+  margin-left: 20px;
+}
+
+.buttons a {
+  color: #fff;
+  font: 11px/21px 'Comfortaa', cursive;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.description-box h4 {
+  margin: 0;
+}
+
+.modal-img {
+  width: 100%;
+}
+
+.modal-img img {
+  max-width: 100%;
+  height: auto;
+}
+
 .works-container {
   width: 100%;
   overflow: hidden;
