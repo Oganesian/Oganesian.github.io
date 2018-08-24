@@ -10,6 +10,7 @@ html {
 body {
   margin: 0;
   height: 100%;
+  /*background: #ebeeee;*/
 }
 
 hr {
@@ -497,6 +498,60 @@ header, section {
   background: #00FA9A;
 }
 
+.portfolio-row {
+  text-align: center;
+  padding-top: 50px;
+  height: 100%;
+  width: 80%;
+  max-width: 1020px;
+  margin: auto;
+}
+
+.works-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.work {
+  float: left;
+  width: 50%;
+  padding: 0px 20px;
+  line-height: 0;
+}
+
+.work-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: #313131;
+  transition: 0.3s ease-in-out;
+}
+
+.overlay:hover {
+  cursor: pointer;
+  opacity: .9;
+}
+
+.works-column {
+  width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.work img {
+  max-width: 100%;
+  height: auto;
+}
+
 footer {
   width: 100%;
   background: #303030;
@@ -532,8 +587,16 @@ footer {
   overflow: hidden;
 }
 
-#resume h1 {
+#resume h1, #works h1 {
   color: #303030;
+}
+
+#works {
+  min-height: 20%;
+  width: 100%;
+  background: #ebeeee;
+  overflow: hidden;
+  padding-bottom: 50px;
 }
 
 @media (max-width: 1160px) {
