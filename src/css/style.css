@@ -515,6 +515,7 @@ header, section {
   height: 100%;
   background: rgba(0, 0, 0, .8);
   z-index: 100;
+  display: none;
 }
 
 .modal-container {
@@ -524,6 +525,7 @@ header, section {
   width: 45%;
   background: #fff;
   position: relative;
+  display: none;
 }
 
 .description-box {
@@ -534,6 +536,36 @@ header, section {
 
 .description-box p {
   font-family: "Century Gothic", "Arial";
+}
+
+.slprev, .slnext {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 1;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  width: auto;
+  padding: 16px;
+  top: 50%;
+  margin-top: -22px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  background: rgba(72, 61, 139, .4);
+  transition: all 0.4s ease;
+}
+
+.slprev:hover, .slnext:hover {
+  background: rgba(72, 61, 139, 1);
+}
+
+.slnext {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
 .buttons {
@@ -564,7 +596,10 @@ header, section {
 }
 
 .modal-img {
+  position: relative;
   width: 100%;
+  max-height: 70%;
+  overflow: hidden;
 }
 
 .modal-img img {
@@ -575,6 +610,10 @@ header, section {
 .works-container {
   width: 100%;
   overflow: hidden;
+}
+
+#sql_2 {
+  display: none;
 }
 
 .work {

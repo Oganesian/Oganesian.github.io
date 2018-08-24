@@ -3,22 +3,53 @@ $(document).ready(function() {
     $(".sandwich").toggleClass("active");
   });
 
-  $(".work-wrap").click(function(){
-    switch(this.id){
-      case "modal-1": alert(1); break;
-      case "modal-2": alert(2); break;
-      case "modal-3": alert(3); break;
-      case "modal-4": alert(4); break;
-    }
+  $(".modal").click(function() {
+    $(".modal").fadeOut();
+    $(".modal-container").fadeOut();
   });
 
-  $(".dismiss").click(function(){
-    switch(this.id){
-      case "close-modal-1": alert(1); break;
-      case "close-modal-2": alert(2); break;
-      case "close-modal-3": alert(3); break;
-      case "close-modal-4": alert(4); break;
+  $('.modal-container').click(function(event) {
+    event.stopPropagation();
+  });
+
+  $(".work-wrap").click(function() {
+    var id;
+    switch (this.id) {
+      case "modal-1":
+        id = "#modal-c-1";
+        break;
+      case "modal-2":
+        id = "#modal-c-2";
+        break;
+      case "modal-3":
+        id = "#modal-c-3";
+        break;
+      case "modal-4":
+        id = "#modal-c-4";
+        break;
     }
+    $(".modal").fadeIn();
+    $(id).fadeIn();
+  });
+
+  $(".dismiss").click(function() {
+    var id;
+    switch (this.id) {
+      case "close-modal-1":
+        id = "#modal-c-1";
+        break;
+      case "close-modal-2":
+        id = "#modal-c-2";
+        break;
+      case "close-modal-3":
+        id = "#modal-c-3";
+        break;
+      case "close-modal-4":
+        id = "#modal-c-4";
+        break;
+    }
+    $(".modal").fadeOut();
+    $(id).fadeOut();
   });
 
   $(".toggle-menu").click(function() {
@@ -31,6 +62,21 @@ $(document).ready(function() {
     }
   });
 });
+
+function plusSlides(imgId, next) {
+  if (imgId == 'modal-i-1') {
+    jQImgId = "#modal-i-1";
+    var ids = ['sql_1.png', 'sql_2.png'];
+    var src = $(jQImgId).attr('src');
+    var current;
+    var next;
+    if (src.includes("1")) {
+      $(jQImgId).attr('src', 'src/img/' + ids[1]);
+    } else {
+      $(jQImgId).attr('src', 'src/img/' + ids[0]);
+    }
+  }
+}
 
 function gotoDiv(which) {
   var txt;
