@@ -503,7 +503,7 @@ header, section {
   padding-top: 50px;
   height: 100%;
   width: 80%;
-  max-width: 1020px;
+  max-width: 1620px;
   margin: auto;
 }
 
@@ -623,7 +623,7 @@ header, section {
 }
 
 .modal-img img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -672,7 +672,7 @@ header, section {
 }
 
 .work img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -745,6 +745,12 @@ footer {
   }
 }
 
+@media (max-width: 1100px){
+  .works-column {
+    width: 100%;
+  }
+}
+
 @media (max-width: 851px) {
   .top-menu ul {
     margin-top: 20%;
@@ -766,6 +772,22 @@ footer {
   .content img {
     width: 20%;
     height: 10%;
+  }
+  .work {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .works-column {
+    margin-bottom:  0px;
+  }
+  .works-container {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 851px) and (orientation: landscape) {
+  .work {
+    width: 50%;
   }
 }
 
@@ -814,6 +836,12 @@ footer {
   .content img {
     width: 25%;
     height: 12%;
+  }
+  .portfolio-row {
+    width: 90%;
+  }
+  .work {
+    margin-bottom: 30px;
   }
 }
 

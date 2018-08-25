@@ -66,6 +66,10 @@ function plusSlides(imgId, next) {
       nextSrc = "padel_3.png"; prevSrc = "padel_1.png"; break;
     case path+"padel_3.png":
       nextSrc = "padel_1.png"; prevSrc = "padel_2.png"; break;
+    case path+"editor_1.png":
+      prevSrc = nextSrc = "editor_2.png"; break;
+    case path+"editor_2.png":
+      prevSrc = nextSrc = "editor_1.png"; break;
   }
 
   if(next == 1){
