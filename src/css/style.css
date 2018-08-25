@@ -676,9 +676,27 @@ header, section {
   height: auto;
 }
 
+.footer-row {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.footer-row img {
+  width: 18%;
+  height: 9%;
+  cursor: pointer;
+  min-width: 100px;
+}
+
+.copyright {
+  font-family: "Comfortaa", cursive, "Century Gothic", "Arial";
+  color: #4e4e4e;
+}
+
 footer {
   width: 100%;
-  background: #303030;
+  background: #0f0f0f;
   min-height: 6%;
 }
 
@@ -737,6 +755,9 @@ footer {
 
 
 @media (max-width: 1160px) {
+  .footer-row {
+    width: 60%;
+  }
   .content h1 {
     font-size: 60px;
   }
@@ -765,6 +786,9 @@ footer {
 }
 
 @media (max-width: 851px) {
+  .footer-row {
+    width: 70%;
+  }
   .top-menu ul {
     margin-top: 20%;
   }
@@ -805,6 +829,9 @@ footer {
 }
 
 @media (max-width: 750px) {
+  .footer-row {
+    width: 80%;
+  }
   .top-menu ul {
     margin-top: 30%;
   }
@@ -840,6 +867,9 @@ footer {
 }
 
 @media (max-width: 570px) {
+  .footer-row {
+    width: 100%;
+  }
   .top-menu ul {
     margin-top: 35%;
   }
