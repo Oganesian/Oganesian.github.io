@@ -64,17 +64,29 @@ $(document).ready(function() {
 });
 
 function plusSlides(imgId, next) {
-  if (imgId == 'modal-i-1') {
-    jQImgId = "#modal-i-1";
-    var ids = ['sql_1.png', 'sql_2.png'];
-    var src = $(jQImgId).attr('src');
-    var current;
-    var next;
-    if (src.includes("1")) {
-      $(jQImgId).attr('src', 'src/img/' + ids[1]);
-    } else {
-      $(jQImgId).attr('src', 'src/img/' + ids[0]);
-    }
+  jQImgId = "#"+imgId;
+  var src = $(jQImgId).attr('src');
+  var path = "src/img/";
+  var nextSrc;
+  var prevStr;
+
+  switch(src){
+    case path+"sql_2.png":
+      nextSrc = prevSrc = "sql_1.png"; break;
+    case path+"sql_1.png":
+      nextSrc = prevSrc = "sql_2.png"; break;
+    case path+"padel_1.png":
+      nextSrc = "padel_2.png"; prevSrc = "padel_3.png"; break;
+    case path+"padel_2.png":
+      nextSrc = "padel_3.png"; prevSrc = "padel_1.png"; break;
+    case path+"padel_3.png":
+      nextSrc = "padel_1.png"; prevSrc = "padel_2.png"; break;
+  }
+
+  if(next == 1){
+    $(jQImgId).attr('src', 'src/img/' + nextSrc);
+  }else{
+    $(jQImgId).attr('src', 'src/img/' + prevSrc);
   }
 }
 
