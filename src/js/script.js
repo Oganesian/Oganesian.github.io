@@ -33,23 +33,8 @@ $(document).ready(function() {
   });
 
   $(".dismiss").click(function() {
-    var id;
-    switch (this.id) {
-      case "close-modal-1":
-        id = "#modal-c-1";
-        break;
-      case "close-modal-2":
-        id = "#modal-c-2";
-        break;
-      case "close-modal-3":
-        id = "#modal-c-3";
-        break;
-      case "close-modal-4":
-        id = "#modal-c-4";
-        break;
-    }
     $(".modal").fadeOut();
-    $(id).fadeOut();
+    $(".modal-container").fadeOut();
   });
 
   $(".toggle-menu").click(function() {
