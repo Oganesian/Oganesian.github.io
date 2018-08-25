@@ -723,6 +723,19 @@ footer {
   padding-bottom: 50px;
 }
 
+#modal-c-1 {
+  min-width: 600px;
+  min-height: 595px;
+}
+
+@media (max-width: 620px){
+  #modal-c-1 {
+    min-width: 90%;
+    min-height: 1px;
+  }
+}
+
+
 @media (max-width: 1160px) {
   .content h1 {
     font-size: 60px;

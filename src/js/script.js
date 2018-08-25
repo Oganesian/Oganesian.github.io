@@ -70,6 +70,12 @@ function plusSlides(imgId, next) {
       prevSrc = nextSrc = "editor_2.png"; break;
     case path+"editor_2.png":
       prevSrc = nextSrc = "editor_1.png"; break;
+    case path+"autodoctor_1.png":
+      nextSrc = "autodoctor_2.png"; prevSrc = "autodoctor_3.png"; break;
+    case path+"autodoctor_2.png":
+      nextSrc = "autodoctor_3.png"; prevSrc = "autodoctor_1.png"; break;
+    case path+"autodoctor_3.png":
+      nextSrc = "autodoctor_1.png"; prevSrc = "autodoctor_2.png"; break;
   }
 
   if(next == 1){
