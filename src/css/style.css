@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Didact+Gothic|Comfortaa:400,700&subset=latin,cyrillic);
+
+
 *, *:before, *:after {
   box-sizing: border-box
 }
@@ -520,12 +522,13 @@ header, section {
 
 .modal-container {
   margin: auto;
-  height: 90%;
+  height: auto;
   margin-top: 2.5%;
   width: 45%;
   background: #fff;
   position: relative;
   display: none;
+  min-width: 600px;
 }
 
 .work-info {
@@ -590,7 +593,7 @@ header, section {
 .buttons {
   bottom: 0px;
   width: 100%;
-  position: absolute;
+  position: relative;
   background: #483D8B;
   padding: 18px 36px;
   text-align: left;
@@ -741,18 +744,22 @@ footer {
   padding-bottom: 50px;
 }
 
-#modal-c-1 {
-  min-width: 600px;
-  min-height: 595px;
-}
-
-@media (max-width: 620px){
-  #modal-c-1 {
-    min-width: 90%;
-    min-height: 1px;
+@media (min-width: 1440px) {
+  .description-box {
+    font-size: 22px;
   }
 }
 
+@media (max-width: 620px) {
+  .modal-container {
+    min-width: 90%;
+    min-height: 1px;
+    height: auto;
+  }
+  .buttons {
+    position: relative;
+  }
+}
 
 @media (max-width: 1160px) {
   .footer-row {
@@ -779,7 +786,7 @@ footer {
   }
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1100px) {
   .works-column {
     width: 100%;
   }
@@ -815,7 +822,7 @@ footer {
     margin-bottom: 50px;
   }
   .works-column {
-    margin-bottom:  0px;
+    margin-bottom: 0px;
   }
   .works-container {
     margin-bottom: 50px;
@@ -825,6 +832,24 @@ footer {
 @media (max-width: 851px) and (orientation: landscape) {
   .work {
     width: 50%;
+  }
+  .modal-container {
+    height: auto;
+    min-height: 1px;
+    max-height: 95%;
+    max-width: 70%;
+  }
+  .buttons {
+    position: relative;
+  }
+}
+
+@media(max-width: 354px) {
+  .dismiss {
+    margin-left: 5px;
+  }
+  .buttons {
+    padding: 18px 18px;
   }
 }
 
@@ -847,9 +872,6 @@ footer {
   }
   .content h3, .content hr {
     width: 90%;
-  }
-  .bars li em {
-    top: -35px
   }
   .resume-items-container {
     width: 90%;
@@ -886,6 +908,13 @@ footer {
   .work {
     margin-bottom: 30px;
   }
+  .bars li em {
+    top: -35px;
+    font-size: 13px;
+  }
+  .bars li {
+    margin-bottom: 70px;
+  }
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -902,8 +931,18 @@ footer {
 
 /* Smartphones (portrait) ----------- */
 
-@media only screen and (max-width: 320px) {
-  /* Styles */
+@media only screen and (max-width: 426px) {
+  .modal-container {
+    height: auto;
+    margin-top: 15%;
+  }
+  .buttons {
+    position: relative;
+  }
+  .description-box {
+    padding: 5px 36px 18px 36px;
+    font-size: 14px;
+  }
 }
 
 /* iPads (portrait and landscape) ----------- */

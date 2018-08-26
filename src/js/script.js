@@ -8,6 +8,10 @@ $(document).ready(function() {
     $(".modal-container").fadeOut();
   });
 
+  $(".top-menu").click(function() {
+    closeMenu();
+  });
+
   $('.modal-container').click(function(event) {
     event.stopPropagation();
   });
@@ -38,49 +42,70 @@ $(document).ready(function() {
   });
 
   $(".toggle-menu").click(function() {
-    if ($(".top-menu").is(":visible")) {
-      $(".top_text").css("opacity", "1");
-      $(".top-menu").fadeOut(600);
-    } else {
-      $(".top_text").css("opacity", ".1");
-      $(".top-menu").fadeIn(600);
-    }
+    closeMenu();
   });
 });
 
+function closeMenu() {
+  if ($(".top-menu").is(":visible")) {
+    $(".top_text").css("opacity", "1");
+    $(".top-menu").fadeOut(600);
+    $(".sandwich").removeClass("active");
+  } else {
+    $(".top_text").css("opacity", ".1");
+    $(".top-menu").fadeIn(600);
+  }
+}
+
 function plusSlides(imgId, next) {
-  jQImgId = "#"+imgId;
+  jQImgId = "#" + imgId;
   var src = $(jQImgId).attr('src');
   var path = "src/img/";
   var nextSrc;
   var prevStr;
 
-  switch(src){
-    case path+"sql_2.png":
-      nextSrc = prevSrc = "sql_1.png"; break;
-    case path+"sql_1.png":
-      nextSrc = prevSrc = "sql_2.png"; break;
-    case path+"padel_1.png":
-      nextSrc = "padel_2.png"; prevSrc = "padel_3.png"; break;
-    case path+"padel_2.png":
-      nextSrc = "padel_3.png"; prevSrc = "padel_1.png"; break;
-    case path+"padel_3.png":
-      nextSrc = "padel_1.png"; prevSrc = "padel_2.png"; break;
-    case path+"editor_1.png":
-      prevSrc = nextSrc = "editor_2.png"; break;
-    case path+"editor_2.png":
-      prevSrc = nextSrc = "editor_1.png"; break;
-    case path+"autodoctor_1.png":
-      nextSrc = "autodoctor_2.png"; prevSrc = "autodoctor_3.png"; break;
-    case path+"autodoctor_2.png":
-      nextSrc = "autodoctor_3.png"; prevSrc = "autodoctor_1.png"; break;
-    case path+"autodoctor_3.png":
-      nextSrc = "autodoctor_1.png"; prevSrc = "autodoctor_2.png"; break;
+  switch (src) {
+    case path + "sql_2.png":
+      nextSrc = prevSrc = "sql_1.png";
+      break;
+    case path + "sql_1.png":
+      nextSrc = prevSrc = "sql_2.png";
+      break;
+    case path + "padel_1.png":
+      nextSrc = "padel_2.png";
+      prevSrc = "padel_3.png";
+      break;
+    case path + "padel_2.png":
+      nextSrc = "padel_3.png";
+      prevSrc = "padel_1.png";
+      break;
+    case path + "padel_3.png":
+      nextSrc = "padel_1.png";
+      prevSrc = "padel_2.png";
+      break;
+    case path + "editor_1.png":
+      prevSrc = nextSrc = "editor_2.png";
+      break;
+    case path + "editor_2.png":
+      prevSrc = nextSrc = "editor_1.png";
+      break;
+    case path + "autodoctor_1.png":
+      nextSrc = "autodoctor_2.png";
+      prevSrc = "autodoctor_3.png";
+      break;
+    case path + "autodoctor_2.png":
+      nextSrc = "autodoctor_3.png";
+      prevSrc = "autodoctor_1.png";
+      break;
+    case path + "autodoctor_3.png":
+      nextSrc = "autodoctor_1.png";
+      prevSrc = "autodoctor_2.png";
+      break;
   }
 
-  if(next == 1){
+  if (next == 1) {
     $(jQImgId).attr('src', 'src/img/' + nextSrc);
-  }else{
+  } else {
     $(jQImgId).attr('src', 'src/img/' + prevSrc);
   }
 }
