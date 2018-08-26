@@ -168,11 +168,135 @@
       </div>
     </section>
     <section id="works">
-
+      <div class="portfolio-row">
+        <h1 class="block-label">Werke</h1>
+        <hr class="label-line">
+        <div class="works-container">
+          <div class="works-column">
+            <div class="work">
+              <div class="work-wrap" id="modal-1">
+                <img src="../src/img/sql_1_min.png" />
+                <div class="overlay">
+                  <div class="work-info">
+                    <h2>GUI für MySQL</h2>
+                    <span>Desktop Programm</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-wrap" id="modal-2">
+                <img src="../src/img/padel_min.png" />
+                <div class="overlay">
+                  <div class="work-info">
+                    <h2>padelrus.ru</h2>
+                    <span>Web-site</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="works-column">
+            <div class="work">
+              <div class="work-wrap" id="modal-3">
+                <img src="../src/img/editor_min.png" />
+                <div class="overlay">
+                  <div class="work-info">
+                    <h2>MyTextEditor</h2>
+                    <span>Desktop Programm</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-wrap" id="modal-4">
+                <img src="../src/img/autodoctor_min.png" />
+                <div class="overlay">
+                  <div class="work-info">
+                    <h2>Autodoctor</h2>
+                    <span>Web-site</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal-container" id="modal-c-1">
+          <div class="modal-img">
+            <img src="../src/img/sql_1.png" id="modal-i-1" />
+            <a class="slprev" onclick="plusSlides('modal-i-1', -1)">❮</a>
+            <a class="slnext" onclick="plusSlides('modal-i-1', 1)">❯</a>
+          </div>
+          <div class="description-box">
+            <h4>GUI für MySQL</h4>
+            <p>A full GUI for the mysql database(server). The program can show, create, delete, edit databases and tables, and perform search and SQL queries</p>
+          </div>
+          <div class="buttons">
+            <a href="https://github.com/Oganesian/TheGUIAndSQLApp">GitHub</a>
+            <a class="dismiss" id="close-modal-1">Close</a>
+          </div>
+        </div>
+        <div class="modal-container" id="modal-c-2">
+          <div class="modal-img">
+            <img src="../src/img/padel_1.png" id="modal-i-2" />
+            <a class="slprev" onclick="plusSlides('modal-i-2', -1)">❮</a>
+            <a class="slnext" onclick="plusSlides('modal-i-2', 1)">❯</a>
+          </div>
+          <div class="description-box">
+            <h4>padelrus.ru</h4>
+            <p>The site of the federation of the Padel Tennis of Russia. A real project.</p>
+          </div>
+          <div class="buttons">
+            <a href="https://padelrus.ru/">Details</a>
+            <a class="dismiss" id="close-modal-1">Close</a>
+          </div>
+        </div>
+        <div class="modal-container" id="modal-c-3">
+          <div class="modal-img">
+            <img src="../src/img/editor_1.png" id="modal-i-3" />
+            <a class="slprev" onclick="plusSlides('modal-i-3', -1)">❮</a>
+            <a class="slnext" onclick="plusSlides('modal-i-3', 1)">❯</a>
+          </div>
+          <div class="description-box">
+            <h4>MyTextEditor</h4>
+            <p>Simple text editor. Is able to Open, Create, Edit, Save (and "Save as...") text files, Undo, Redo actions, Copy, Cut and Paste text. Also, the system searches a text in file. The search word is highlighted.</p>
+          </div>
+          <div class="buttons">
+            <a href="https://github.com/Oganesian/MyTextEditor">GitHub</a>
+            <a class="dismiss" id="close-modal-1">Close</a>
+          </div>
+        </div>
+        <div class="modal-container" id="modal-c-4">
+          <div class="modal-img">
+            <img src="../src/img/autodoctor_1.png" id="modal-i-4" />
+            <a class="slprev" onclick="plusSlides('modal-i-4', -1)">❮</a>
+            <a class="slnext" onclick="plusSlides('modal-i-4', 1)">❯</a>
+          </div>
+          <div class="description-box">
+            <h4>Autodoctor</h4>
+            <p>My old (2017) WEB-project. The project is designed solely to improve my skills and get practice.</p>
+          </div>
+          <div class="buttons">
+            <a href="https://github.com/Oganesian/Repair-of-chips-and-cracks">GitHub</a>
+            <a href="https://oganesian.github.io/Repair-of-chips-and-cracks/" class="dismiss">GH-Pages</a>
+            <a class="dismiss" id="close-modal-1">Close</a>
+          </div>
+        </div>
+      </div>
     </section>
     <footer>
       <div class="go-back">
         <img onclick="gotoDiv(0)" src="../src/img/arrow-up.svg" alt="Zurück" />
+      </div>
+      <div class="footer-row">
+        <div class="github">
+          <a href="https://github.com/Oganesian" target="_blank"><img src="../src/img/gitlogo.png" alt="github logo"></a>
+        </div>
+        <div class="copyright">
+          <p>© Copyright 2018 Oganesian Karen</p>
+        </div>
       </div>
     </footer>
   </div>
