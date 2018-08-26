@@ -60,7 +60,14 @@ function closeMenu() {
 function plusSlides(imgId, next) {
   jQImgId = "#" + imgId;
   var src = $(jQImgId).attr('src');
-  var path = "src/img/";
+  var callerPath = window.location.pathname;
+  var path;
+
+  if(callerPath.includes("/de/")){
+    path = "../src/img/";
+  } else {
+    path = "src/img/";
+  }
   var nextSrc;
   var prevStr;
 
@@ -104,9 +111,9 @@ function plusSlides(imgId, next) {
   }
 
   if (next == 1) {
-    $(jQImgId).attr('src', 'src/img/' + nextSrc);
+    $(jQImgId).attr('src', path + nextSrc);
   } else {
-    $(jQImgId).attr('src', 'src/img/' + prevSrc);
+    $(jQImgId).attr('src', path + prevSrc);
   }
 }
 
