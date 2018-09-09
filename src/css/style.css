@@ -744,6 +744,10 @@ footer {
   padding-bottom: 50px;
 }
 
+#modal-c-3 {
+  margin-top: 0.75%;
+}
+
 @media (min-width: 1440px) {
   .description-box {
     font-size: 22px;
