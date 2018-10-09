@@ -31,6 +31,9 @@ $(document).ready(function() {
       case "modal-4":
         id = "#modal-c-4";
         break;
+        case "modal-5":
+          id = "#modal-c-5";
+          break;
     }
     $(".modal").fadeIn();
     $(id).fadeIn();
@@ -71,50 +74,33 @@ function plusSlides(imgId, next) {
   var nextSrc;
   var prevStr;
 
-  switch (src) {
-    case path + "sql_2.png":
-      nextSrc = prevSrc = "sql_1.png";
+  var arrayOfString = src.split("/");
+  var filename = arrayOfString[arrayOfString.length - 1];
+  var separatedFilename = filename.split("_");
+  var projectName = separatedFilename[0];
+  var imgId = parseInt(separatedFilename[1], 10);
+
+  var maxImgId = 1;
+
+  switch(projectName){
+    case "sql":
+    case "editor":
+      maxImgId = 2;
       break;
-    case path + "sql_1.png":
-      nextSrc = prevSrc = "sql_2.png";
+    case "autodoctor":
+    case "padel":
+      maxImgId = 3;
       break;
-    case path + "padel_1.png":
-      nextSrc = "padel_2.png";
-      prevSrc = "padel_3.png";
-      break;
-    case path + "padel_2.png":
-      nextSrc = "padel_3.png";
-      prevSrc = "padel_1.png";
-      break;
-    case path + "padel_3.png":
-      nextSrc = "padel_1.png";
-      prevSrc = "padel_2.png";
-      break;
-    case path + "editor_1.png":
-      prevSrc = nextSrc = "editor_2.png";
-      break;
-    case path + "editor_2.png":
-      prevSrc = nextSrc = "editor_1.png";
-      break;
-    case path + "autodoctor_1.png":
-      nextSrc = "autodoctor_2.png";
-      prevSrc = "autodoctor_3.png";
-      break;
-    case path + "autodoctor_2.png":
-      nextSrc = "autodoctor_3.png";
-      prevSrc = "autodoctor_1.png";
-      break;
-    case path + "autodoctor_3.png":
-      nextSrc = "autodoctor_1.png";
-      prevSrc = "autodoctor_2.png";
+    case "schedule":
+      maxImgId = 8;
       break;
   }
 
-  if (next == 1) {
-    $(jQImgId).attr('src', path + nextSrc);
-  } else {
-    $(jQImgId).attr('src', path + prevSrc);
-  }
+  imgId += next; // +1 or -1
+  if(imgId > maxImgId) imgId = 1;
+  if(imgId < 1) imgId = maxImgId;
+
+  $(jQImgId).attr('src', path + projectName + '_' + imgId + '.png');
 }
 
 function gotoDiv(which) {
